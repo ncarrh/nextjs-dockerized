@@ -1,16 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a next js project integrated with nginx server and docker containers.
+The hot reload is enabled in development environment.
+
+## Prerequisites
+
+### Docker installation
+
+First download the Docker from the Docker site and follow the instructions
+
+- Open [install instructions](https://docs.docker.com/get-docker/)
 
 ## Getting Started
 
-First, run the development server:
+### development mode
+
+Just run the compose script:
 
 ```bash
-npm run dev
-# or
-yarn dev
+npm run docker-compose up
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To watch the logs run the following command
+
+```bash
+docker compose logs -f app
+```
+
+Open [http://localhost:8000](http://localhost:8000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
